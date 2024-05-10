@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Objeto de Config. do Axios - está pedindo para o axios conectar ao nosso Back
 const api = axios.create({
-    baseURL: 'https://blog-pessoal-0vbr.onrender.com'
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 // Função Assíncrona - Funções que esperam que determinada tarefa termine para seguir o seu fluxo de lógica (async/await)
